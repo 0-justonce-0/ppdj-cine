@@ -1,0 +1,78 @@
+body.shape {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+body.dun {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/dkbg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+body.incep {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/ictbg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+body.dark {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/tdnbg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+h3 {
+    margin-left: 325px;
+}
+
+.simg2, .simg3, .simg4 {
+    width: 175px;
+    height: 250px;
+}
+
+.simg4 {
+    margin-left: -600px;
+}
+
+.simg3 {
+    margin-left: -400px;
+}
+
+.simg2 {
+    margin-left: -200px;
+}
+
+.row {
+    margin-left: 350px;
+}
+
+.bborder {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+    font-size: 15px;
+    font: bold;
+    float: left;
+    height: 40px;
+    width: 115px;
+    border-radius: 25px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.bborder:hover {
+    background-color: #fff;
+    color: #143257;
+}
+
+.set-frame-mai {
+    width: 283px;
+    height: 400px;
+}

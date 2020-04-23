@@ -1,0 +1,34 @@
+.payment-part {
+	border: 4px dotted #fff;
+	font-size: 27px;
+	padding: 60px;
+}
+
+.confirm {
+	font-size: 15px;
+  font: bold;
+  float: right;
+  height: 40px;
+  width: 90px;
+  border-radius: 25px;
+}
+
+.confirm:hover {
+  cursor: pointer;
+}
+
+.back-to-seatb {
+	font-size: 15px;
+  font: bold;
+  float: left;
+  height: 40px;
+  width: 90px;
+  border-radius: 25px;
+}
+
+.back-to-seatb:hover {
+  cursor: pointer;
+}
+.price-here{width: 12.5%;border: 2px solid #fff;border-radius: 4px;outline: none;padding: 4px;box-sizing: border-box;}
+.card-long{width: 50%;border: 2px solid #fff;border-radius: 4px;outline: none;padding: 4px;box-sizing: border-box;}
+.card-short{width: 20%;border: 2px solid #fff;border-radius: 4px;outline: none;padding: 4px;box-sizing: border-box;}
