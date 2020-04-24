@@ -8,8 +8,8 @@ if(isset($_SESSION['user'])!="") {
 
 $username = $_POST['username'];
 $pwd = $_POST['pwd'];
-$res = mysqli_query($conn, "SELECT * FROM staff WHERE username = '$username'");
-$row = mysqli_fetch_array($res);
+$res = pg_query($conn, "SELECT * FROM staff WHERE username = '$username'");
+$row = pg_fetch_array($res);
 if($row['password']==$pwd) {
 	$_SESSION['user']=$row['username'];
 	header("Location: adminpage.html");
@@ -89,4 +89,5 @@ if($row['password']==$pwd) {
 </html>
 	';
 }
+pg_close($conn);
 ?>
