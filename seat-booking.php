@@ -20,7 +20,7 @@ $_SESSION['movid'] = $movid;
 $round = $_POST['timelist'];
 $_SESSION['round'] = $round;
 
-$sql = mysqli_query($conn, "SELECT name FROM movie WHERE movieid = '$movid'");
+$sql = pg_query($conn, "SELECT name FROM movie WHERE movieid = '$movid'");
 ?>
 
 <!DOCTYPE html>
@@ -47,10 +47,10 @@ $sql = mysqli_query($conn, "SELECT name FROM movie WHERE movieid = '$movid'");
 
     <div class="thisishidden">
         <?php
-            $res = mysqli_query($conn, "SELECT bookseat FROM booking B WHERE (B.username = '$_SESSION['user']') AND (B.datebooked = '$_SESSION['bookdate']') AND (B.bookround = '$_SESSION['round'])");
+            $res = pg_query($conn, "SELECT bookseat FROM booking B WHERE (B.username = '$_SESSION['user']') AND (B.datebooked = '$_SESSION['bookdate']') AND (B.bookround = '$_SESSION['round'])");
             $datas = array();
-            if(mysqli_query($res) > 0) {
-                while($row = mysqli_fetch_assoc($result)) {
+            if(pg_query($res) > 0) {
+                while($row = pg_fetch_assoc($result)) {
                     $datas[] = $row;
                 }
             }
@@ -210,5 +210,5 @@ $sql = mysqli_query($conn, "SELECT name FROM movie WHERE movieid = '$movid'");
 </html>
 
 <?php
-mysqli_close($conn);
+pg_close($conn);
 ?>
