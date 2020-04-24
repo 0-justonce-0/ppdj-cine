@@ -19,6 +19,6 @@ if(pg_query($conn, $sql)) {
 	echo 0;
 } echo "Failed to add a new member";
 
-mysqli_close($conn);
+pg_close($conn);
 
 ?>
