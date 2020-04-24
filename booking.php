@@ -24,7 +24,7 @@ $count = count($seatEach);
 
 for ($i=0; $i < $count; $i++) { 
 	$sql = "INSERT INTO booking(username, bookid, datebooked bookingdate, bookingtime, movieid, bookseat, bookround) VALUES('$username','$bookid','$datebooked','$bookdate','$booktime','$movieid','$seatEach[$i]','$round')";
-	if(mysqli_query($conn, $sql)) {
+	if(pg_query($conn, $sql)) {
 		$checkAdd = 1;
 	} else {
 		$checkAdd = 0;
@@ -34,9 +34,9 @@ for ($i=0; $i < $count; $i++) {
 
 $sql2 = "INSERT INTO payment(invoice,username,type,cardno,price) VALUES('$invoice','$username','$type','$cardNum','$price')";
 
-if(mysqli_query($conn, $sql2) && $checkAdd == 1) {
+if(pg_query($conn, $sql2) && $checkAdd == 1) {
 	header("Location: complete.html");
 }
 
-mysqli_close($conn);
+pg_close($conn);
 ?>
