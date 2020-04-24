@@ -32,7 +32,7 @@ include_once 'dbconnect.php';
  }
 
  $sql = "INSERT INTO account(username,password,fname,midname,lname,email,gender,birthday,phone) VALUES('$username','$pwd1','$firstname','$middlename','$lastname','$email','$gender','$birthday','$tel')";
- if(mysqli_query($conn, $sql)) {
+ if(pg_query($conn, $sql)) {
  	$_SESSION['user'] = $username;
  	header("Location: index.html");
  } else {
@@ -41,5 +41,5 @@ include_once 'dbconnect.php';
  		<?php
  }
 
-mysqli_close($conn)
+pg_close($conn)
 ?>
