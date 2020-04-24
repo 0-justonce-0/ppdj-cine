@@ -89,5 +89,5 @@ if($row['password']==$pwd) {
 </html>
 	';
 }
-mysqli_close($conn);
+pg_close($conn);
 ?>
