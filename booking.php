@@ -34,7 +34,7 @@ if(mysqli_query($conn, $sql)) {
 $sql2 = "INSERT INTO payment(username,type,cardno,price) VALUES('$username','$type','$cardNum','$price')";
 
 if(mysqli_query($conn, $sql2) && $checkAdd == 1) {
-	header("Location: complete.html");
+	header("Location: complete.php");
 }
 
 mysqli_close($conn);
