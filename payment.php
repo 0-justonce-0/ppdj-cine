@@ -21,11 +21,12 @@ $_SESSION['cinema'] = $cinema;
     <script src="js/pay.js"></script>
     <link type="text/css" rel="stylesheet" href="css/seat-style.css">
 	<link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+	<script src="js/login.js"></script>
 </head>
 <body>
 
 	<div class="pymnt">
-        <form name="myForm2" onsubmit="return validateForm();" action="booking.php" method="POST">
+        <form name="myForm2" onsubmit="return validateForm();" action="boooking.php" method="POST">
             <div>Total price: 220 Baht.</div>
             <br>
             Payment options: <input class="method" id="mscd" type="radio" name="type" value="master" />
