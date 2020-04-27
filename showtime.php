@@ -147,7 +147,7 @@
                                 <div class="schedule-item">10:00</div>
                                 <div class="schedule-item">13:00</div>
                                 <div class="schedule-item">17:00</div>
-                                <form action="booking.php" method="post">
+<!--                                 <form action="booking.php" method="post">
                                     <select class="select-color fill-focus" name="timelist" required>
                                         <option class="select-color" disabled selected>--เลือกรอบเวลา--</option>
                                         <option class="select-color" value="10">10.00 น.</option>
@@ -157,7 +157,7 @@
                                     <input type="text" name="movid" value="mov02" disabled hidden>
                                     <input type="text" name="cinema" value="cinema 2" disabled hidden>
                                     <input type="submit" value="Book">
-                                </form>
+                                </form> -->
                             </div>
                         </div>
                     </td>
@@ -179,7 +179,7 @@
                                 <div class="schedule-item">10:00</div>
                                 <div class="schedule-item">13:00</div>
                                 <div class="schedule-item">17:00</div>
-                                <form action="booking.php" method="post">
+<!--                                 <form action="booking.php" method="post">
                                     <select class="select-color fill-focus" name="timelist" required>
                                         <option class="select-color" disabled selected>--เลือกรอบเวลา--</option>
                                         <option class="select-color" value="10">10.00 น.</option>
@@ -189,7 +189,7 @@
                                     <input type="text" name="movid" value="mov03" disabled hidden>
                                     <input type="text" name="cinema" value="cinema 3" disabled hidden>
                                     <input type="submit" value="Book">
-                                </form>
+                                </form> -->
                             </div>
                         </div>
                     </td>
@@ -211,7 +211,7 @@
                                 <div class="schedule-item">10:00</div>
                                 <div class="schedule-item">13:00</div>
                                 <div class="schedule-item">17:00</div>
-                                <form action="booking.php" method="post">
+<!--                                 <form action="booking.php" method="post">
                                     <select class="select-color fill-focus" name="timelist" required>
                                         <option class="select-color" disabled selected>--เลือกรอบเวลา--</option>
                                         <option class="select-color" value="10">10.00 น.</option>
@@ -221,7 +221,7 @@
                                     <input type="text" name="movid" value="mov04" disabled hidden>
                                     <input type="text" name="cinema" value="cinema 4" disabled hidden>
                                     <input type="submit" value="Book">
-                                </form>
+                                </form> -->
                             </div>
                         </div>
                     </td>
