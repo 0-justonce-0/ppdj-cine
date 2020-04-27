@@ -20,6 +20,7 @@ $_SESSION['cinema'] = $cinema;
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/pay.js"></script>
     <link type="text/css" rel="stylesheet" href="css/seat-style.css">
+	<link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
