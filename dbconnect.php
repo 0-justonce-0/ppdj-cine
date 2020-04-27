@@ -1,12 +1,11 @@
 <?php
 
-$servername = "ec2-3-231-46-238.compute-1.amazonaws.com";
-$username = "tiqxtmdxejqirl";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "b8f83d13cf9bb0";
 $password = "5a13415c33a740c9e0a29d0874cb47934033c4418872cd3aecfeeec3d6b872d6";
-$port = "5432";
-$dbname = "dd18of86m8s8od";
+$dbname = "b122fa66";
 
-$conn = pg_connect("host=$servername, port=$port, user=$username, password=$password, dbname=$dbname");
+$conn = mysqli_connect("host=$servername, user=$username, password=$password, dbname=$dbname");
 
 // if(mysqli_connect_errno()) {
 // 	echo 'Failed to connect to MySQL ' . mysqli_connect_error();
