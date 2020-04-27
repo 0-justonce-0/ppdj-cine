@@ -32,7 +32,7 @@ if(isset($_SESSION['user'])==""){
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html"> Home</a>
-                <a class="navbar-brand" href="showtime.html">Showtime</a>
+                <a class="navbar-brand" href="showtime.php">Showtime</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
