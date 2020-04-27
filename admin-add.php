@@ -15,10 +15,10 @@ if(isset($_GET['mname'])==""){
 include_once 'dbconnet.php';
 
 $sql = "INSERT INTO account VALUES('$username','$password','$firstname','$midname','$lastname','$email','$gender','$birthday','$phonenum')";
-if(pg_query($conn, $sql)) {
+if(mysqli_query($conn, $sql)) {
 	echo 0;
 } echo "Failed to add a new member";
 
-pg_close($conn);
+mysqli_close($conn);
 
 ?>
