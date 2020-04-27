@@ -3,9 +3,9 @@ include_once 'dbconnect.php';
 
 $username = $_POST['username'];
 
-$res = pg_query($conn, "SELECT username FROM account WHERE username = '$username'");
+$res = mysqli_query($conn, "SELECT username FROM account WHERE username = '$username'");
 
-while ($row = pg_fetch_array($res)) {
+while ($row = mysqli_fetch_array($res)) {
 	if($row['username']) {
 		echo 1;
 	} else {
@@ -13,5 +13,5 @@ while ($row = pg_fetch_array($res)) {
 	}
 }
 
-pg_close($conn);
+mysqli_close($conn);
 ?>
