@@ -1,6 +1,9 @@
 <?php
 session_start();
 include_once 'dbconnect.php';
+if(isset($_SESSION['user'])=="") {
+  header("Location: index.html"); 
+}
 
 $username = $_SESSION['user'];
 $type = $_POST['type'];
@@ -18,8 +21,8 @@ $moviename = $row['name'];
 $sql = "INSERT INTO booking VALUES('$username','$moviename','$round','$bookdate','$cinema')";
 mysqli_query($conn, $sql);
 
-$sql .= "INSERT INTO payment VALUES('$username','$type','$cardNum','220')";
-mysqli_query($conn, $sql);
+$sql2 = "INSERT INTO payment VALUES('$username','$type','$cardNum','220')";
+mysqli_query($conn, $sql2);
 
 header("Location: complete.php");
 
