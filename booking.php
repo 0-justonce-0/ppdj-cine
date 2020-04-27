@@ -1,9 +1,9 @@
 <?php
 session_start();
+include_once 'dbconnect.php';
 if(isset($_SESSION['user'])==""){
 	header("Location: customer-signin.html");
 }
-include_once 'dbconnect.php';
 
 $username = $_SESSION['user'];
 $type = $_POST['type'];
