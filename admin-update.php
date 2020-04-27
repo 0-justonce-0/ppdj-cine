@@ -15,11 +15,11 @@ if(isset($_GET['mname'])==""){
 include_once 'dbconnet.php';
 
 $sql = "UPDATE account SET username = '$username', password = '$password', fname = '$firstname', midname = '$midname', lname = '$lastname', email = '$email', gender = '$gender', birthday = '$birthday', phone = '$phonenum') WHERE number = '$username'";
-if(!pg_query($conn, $sql)) {
+if(!mysqli_query($conn, $sql)) {
 	echo "Failed to update an account."\n";
 } else {
 	echo 0;
 }
-pg_close($conn);
+mysqli_close($conn);
 
 ?>
