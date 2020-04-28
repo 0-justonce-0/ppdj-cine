@@ -16,3 +16,18 @@ $(document).ready(function() {
 		$("#up").show();;
 	});
 });
+
+pwdValidation = () => {
+	var x = document.forms["user-pwd"]["password"].value;
+	var y = document.forms["user-pwd"]["repassword"].value;
+	var valid = 1;
+	if(x != y) {
+		alert("Password not match");
+		valid = 0;
+	}
+	if(valid == 0) {
+		return false;
+	} else {
+		return true;
+	}
+}
