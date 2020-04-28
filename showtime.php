@@ -93,7 +93,7 @@ if(isset($_SESSION['user'])=="") {
             Select date: <input class="select-color fill-focus" type="date" name="bookdate">&nbsp;&nbsp;
             <label>Movie: </label>
             <select class="select-color fill-focus" id="movsel" name="movielist">
-                <option class="select-color">--Select movie--</option>
+                <option class="select-color" disabled>--Select movie--</option>
                 <option class="select-color" value="Shape of water">Shape of water</option>
                 <option class="select-color" value="Inception">Inception</option>
                 <option class="select-color" value="Dunkirk">Dunkirk</option>
