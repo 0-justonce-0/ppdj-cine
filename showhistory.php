@@ -78,7 +78,6 @@ if(isset($_SESSION['user'])==""){
     	<tr>
     		<th>Username</th>
     		<th>Movie</th>
-    		<th>Cinema</th>
     		<th>Round</th>
     		<th>Date</th>
     	</tr>
@@ -90,7 +89,6 @@ if(isset($_SESSION['user'])==""){
     				echo "<tbody><tr>";
     				echo "<td>" . $row['username'] . "<td>";
     				echo "<td>" . $row['moviename'] . "<td>";
-    				echo "<td>" . $row['cinema'] . "<td>";
     				echo "<td>" . $row['round'] . "<td>";
     				echo "<td>" . $row['bookdate'] . "<td>";
     				echo "</tr>";
