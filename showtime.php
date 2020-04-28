@@ -75,7 +75,7 @@ if(isset($_SESSION['user'])=="") {
         <h1>PPDJ <span class="sigma">Σ</span>-nema</h1>
     </div>
 
-<div>
+<div style="text-align:center;">
 	<?php
 		echo date("d M Y");
 	?>
