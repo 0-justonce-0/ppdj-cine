@@ -21,6 +21,7 @@ if(isset($_SESSION['user'])==""){
     <link rel="stylesheet" href="css/index-ext.css">
     <script src="js/login.js"> </script>
     <link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+	<style>table{text-alingn:center;}</style>
 </head>
 <body class="shape">
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -78,19 +79,17 @@ if(isset($_SESSION['user'])==""){
     	<tr>
     		<th>Username</th>
     		<th>Movie</th>
-    		<th>Cinema</th>
     		<th>Round</th>
     		<th>Date</th>
     	</tr>
     	<?php
-    		$sql = "SELECT username,moviename,cinema,round,bookdate FROM booking WHERE username = '$_SESSION['user']";
+    		$sql = "SELECT username,moviename,round,bookdate FROM booking WHERE username = '$_SESSION['user']";
     		$res = mysqli_query($conn, $sql);
-    		if(mysqli_num_row($res)>0){
+    		if(mysqli_num_rows($res)>0){
     			while($row = mysqli_fetch_array($res)) {
     				echo "<tbody><tr>";
     				echo "<td>" . $row['username'] . "<td>";
     				echo "<td>" . $row['moviename'] . "<td>";
-    				echo "<td>" . $row['cinema'] . "<td>";
     				echo "<td>" . $row['round'] . "<td>";
     				echo "<td>" . $row['bookdate'] . "<td>";
     				echo "</tr>";
