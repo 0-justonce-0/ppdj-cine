@@ -82,7 +82,7 @@ if(isset($_SESSION['user'])==""){
     		<th>Date</th>
     	</tr>
     	<?php
-    		$sql = "SELECT username,moviename,cinema,round,bookdate FROM booking WHERE username = '$_SESSION['user']";
+    		$sql = "SELECT username,moviename,round,bookdate FROM booking WHERE username = '$_SESSION['user']'";
     		$res = mysqli_query($conn, $sql);
     		if(mysqli_num_row($res)>0){
     			while($row = mysqli_fetch_array($res)) {
