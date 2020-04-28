@@ -18,7 +18,7 @@ if(isset($_SESSION['user'])=="") {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/forcompany.css">
     <link rel="stylesheet" href="css/admin-signin.css">
-    <link rel="stylesheet" href="css/st-style.css">
+    <link rel="stylesheet" href="css/showtime.css">
     <script src="js/login.js"> </script>
     <script src="js/st.js"></script>
 </head>
