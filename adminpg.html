@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/forcompany.css">
+    <link rel="stylesheet" href="css/admin-signin.css">
+    <script src="js/login.js"> </script>
+    <script src="js/admin.js"> </script>
+</head>
+
+<body id="signUpPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown" id="new">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                                class="glyphicon glyphicon-user"> Sign in&nbsp;</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                            <li><a href="register.html">Register</a></li>
+
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Sign in</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="admin-signin.html">Admin Sign in</a></li>
+                                    <li><a href="customer-signin.html">Customer Sign in</a></li>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                </ul>
+                </li>
+                <li class="dropdown" id="old">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"
+                            id="wuser">Welcome!</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        <!-- <li><a href="showhistory.php">History</a></li> -->
+                        <li><a href="#" id="logout">Sign out</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>PPDJ <span class="sigma">Σ</span>-nema</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="btn-group btn-group-justified">
+            <div class="btn btn-primary" id="a">Add</div>
+            <div class="btn btn-primary" id="u">Update</div>
+        </div>
+        <hr />
+        <div id="add">
+            <h1>Movie</h1>
+            <hr>
+            <form class="form-horizontal" role="form" id="addf" action="movie-add.php" method="POST">
+                Add new Movie
+                <br>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="flightno2">Movie Id</label>
+                    <div class="col-sm-6">
+                        <input type="flightno" class="form-control" id="user" placeholder="" name="movieid" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="airplaneid2">Movie Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="pass" placeholder="" name="moviename" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="departure">Movie Genre</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="first" placeholder="" name="moviegenre" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="dtime">Movie Duration</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="middle" placeholder="" name="movieduration">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="arrival">Movie Description</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="last" placeholder="" name="moviedes" required>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-6">
+                        <input type="submit" class="btn btn-primary btn-block" name="btn-submit" id="ad" value="Add" />
+                    </div>
+                </div>
+            </form>
+            <br>
+            <form class="form-horizontal" role="form" id="addf" action="movie-up.php" method="POST">
+                Update Movie
+                <br>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="flightno2">Movie id</label>
+                    <div class="col-sm-6">
+                        <input type="flightno" class="form-control" id="user" placeholder="" name="movieid" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="airplaneid2">Movie name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="pass" placeholder="" name="moviename" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="arrival">Movie Description</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="last" placeholder="" name="moviedes" required>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-6">
+                        <input type="submit" class="btn btn-primary btn-block" name="btn-submit" id="ad"
+                            value="Update" />
+                    </div>
+                </div>
+            </form>
+            <br>
+            <form class="form-horizontal" role="form" id="addf" action="movie-del.php" method="POST">
+                Delete Movie
+                <br>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="flightno2">Movie id</label>
+                    <div class="col-sm-6">
+                        <input type="flightno" class="form-control" id="user" placeholder="" name="movieid" required>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-6">
+                        <input type="submit" class="btn btn-primary btn-block" name="btn-submit" id="ad"
+                            value="Delete" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="update">
+            <h1>Customer</h1>
+            <hr>
+            <form class="form-horizontal" role="form" id="addf" action="customer-add.php" method="POST">
+                Add new customer
+                <br>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="flightno2">Username</label>
+                    <div class="col-sm-6">
+                        <input type="flightno" class="form-control" id="user" placeholder="" name="username" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="airplaneid2">Password</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="pass" placeholder="" name="pwd" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="departure">First name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="first" placeholder="" name="fname" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="dtime">Last name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="middle" placeholder="" name="lname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="arrival">Email</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="last" placeholder="" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="arrival">Gender</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="last" placeholder="M or F" name="gender" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="arrival">Birthday</label>
+                    <div class="col-sm-6">
+                        <input type="date" class="form-control" id="last" placeholder="" name="bday" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="arrival">Phone number</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="last" placeholder="ex. 045-678-9101" name="phonenum" required>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-6">
+                        <input type="submit" class="btn btn-primary btn-block" name="btn-submit" id="ad" value="Add" />
+                    </div>
+                </div>
+            </form>
+            <br>
+            <form class="form-horizontal" role="form" id="addf" action="customer-up.php" method="POST">
+                Update customer password
+                <br>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="flightno2">Username</label>
+                    <div class="col-sm-6">
+                        <input type="flightno" class="form-control" id="user" placeholder="" name="username" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="airplaneid2">Password</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="pass" placeholder="" name="password" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="arrival">Re-enter password</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="last" placeholder="" required>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-6">
+                        <input type="submit" class="btn btn-primary btn-block" name="btn-submit" id="ad"
+                            value="Update" />
+                    </div>
+                </div>
+            </form>
+            <br>
+            <form class="form-horizontal" role="form" id="addf" action="customer-del.php" method="POST">
+                Delete customer
+                <br>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="flightno2">Username</label>
+                    <div class="col-sm-6">
+                        <input type="flightno" class="form-control" id="user" placeholder="" name="username" required>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-6">
+                        <input type="submit" class="btn btn-primary btn-block" name="btn-submit" id="ad"
+                            value="Delete" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br /><br /><br />
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer class="container-fluid text-center">
+        <a href="#signUpPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>PPDJ-cinema.com</p>
+    </footer>
+</body>
+
+</html>
