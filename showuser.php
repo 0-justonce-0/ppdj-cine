@@ -21,7 +21,6 @@ if(isset($_SESSION['user'])=="") {
     <link rel="stylesheet" href="css/admin-signin.css">
     <link rel="stylesheet" href="css/showuser.css">
     <script src="js/login.js"> </script>
-    <script src="js/st.js"></script>
 </head>
 
 <body class="cine" id="signUpPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -34,7 +33,6 @@ if(isset($_SESSION['user'])=="") {
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html"> Home</a>
-                <a class="navbar-brand" href="showtime.html">Showtime</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -65,7 +63,6 @@ if(isset($_SESSION['user'])=="") {
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                        <li><a href="showhistory.php">History</a></li>
                         <li><a href="#" id="logout">Sign out</a></li>
                     </ul>
                 </li>
@@ -109,7 +106,11 @@ if(isset($_SESSION['user'])=="") {
                     echo "</tr>";
                 }
             } else {
-                echo "No booking history record found.";
+                echo "
+		<div class="not-found-alert">
+		No booking history record found.
+		</div>
+		";
             }
             echo "</tbody>";
         ?>
