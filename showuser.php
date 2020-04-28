@@ -107,7 +107,7 @@ if(isset($_SESSION['user'])=="") {
                 }
             } else {
                 echo "
-		<div class="not-found-alert">
+		<div class="text-center">
 		No booking history record found.
 		</div>
 		";
