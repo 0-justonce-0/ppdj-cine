@@ -1,7 +1,7 @@
 <?php
 include_once 'dbconnect.php';
 
-$username = "Johnson";
+$username = $_SESSION['user'];
 $date = $_POST['bookdate'];
 $moviename = $_POST['movielist'];
 $round = $_POST['timelist'];
