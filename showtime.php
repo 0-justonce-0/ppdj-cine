@@ -107,7 +107,7 @@ if(isset($_SESSION['user'])=="") {
         <div class="flex-container go-center">
             <label>Select time: </label>&nbsp;&nbsp;
             <select class="select-color fill-focus" name="timelist">
-                <option class="select-color">--เลือกรอบเวลา--</option>
+                <option class="select-color" disabled>--เลือกรอบเวลา--</option>
                 <option class="select-color" value="9">9.00 น.</option>
                 <option class="select-color" value="13">13.00 น.</option>
                 <option class="select-color" value="17">17.00 น.</option>
