@@ -231,7 +231,7 @@
                 </div>
             </form>
             <br>
-            <form class="form-horizontal" role="form" id="addf" action="customer-up.php" method="POST">
+            <form name="user-pwd" onsubmit="return pwdValidation();" class="form-horizontal" role="form" id="addf" action="customer-up.php" method="POST">
                 Update customer password
                 <br>
                 <div class="form-group">
@@ -249,7 +249,7 @@
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="arrival">Re-enter password</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="last" placeholder="" required>
+                        <input type="text" class="form-control" id="last" placeholder="" name="repassword" required>
                     </div>
                 </div>
                 <br />
