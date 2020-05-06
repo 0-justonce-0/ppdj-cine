@@ -76,6 +76,8 @@ if(isset($_SESSION['user'])=="") {
     </div>
 
     <h1 style="text-align: center;">Booked successful!</h1>
+	
+	<br><br><br><br>
 
     <div style="text-align: center;">
         <a class="showuser" href="index.html">Home</a>
