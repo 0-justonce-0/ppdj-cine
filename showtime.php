@@ -64,6 +64,7 @@ if(isset($_SESSION['user'])=="") {
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+			    <li><a href="showhistory.php">History</a></li>
                         <li><a href="#" id="logout">Sign out</a></li>
                     </ul>
                 </li>
