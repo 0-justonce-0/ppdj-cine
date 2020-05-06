@@ -80,7 +80,7 @@ if(isset($_SESSION['user'])=="") {
     </div>
 
     <div>
-        <h1>History of booking</h1>
+        <h1 style="text-align: center;">Booking history</h1>
     </div>
     <br>
     <table class="content-table">
