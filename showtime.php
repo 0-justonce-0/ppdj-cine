@@ -77,7 +77,7 @@ if(isset($_SESSION['user'])=="") {
 
 <div style="text-align:center;">
 	<?php
-		echo date("d M Y");
+		echo date("d M Y", strtotime("+1 day"));
 	?>
 </div>
 
