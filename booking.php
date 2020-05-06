@@ -9,7 +9,7 @@ $round = $_POST['timelist'];
 
 $sql = "INSERT INTO booking(username,moviename,round,bookdate) VALUES('$username','$moviename','$round','$date')";
 if(mysqli_query($conn, $sql)) {
-	header("location: index.html");
+	header("location: completed.php");
 }
 
 mysqli_close($conn);
