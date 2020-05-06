@@ -125,3 +125,7 @@ if(isset($_SESSION['user'])=="") {
 </body>
 
 </html>
+
+<?php
+mysqli_close($conn);
+?>
