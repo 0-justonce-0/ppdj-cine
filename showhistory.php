@@ -113,7 +113,7 @@ if(isset($_SESSION['user'])=="") {
 
         </table>
     
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <footer class="container-fluid text-center">
         <a href="#" title="To Top">
