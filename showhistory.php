@@ -86,7 +86,6 @@ if(isset($_SESSION['user'])=="") {
     <table class="content-table">
         <tr>
             <th>Booking ID</th>
-            <th>Username</th>
             <th>Movie</th>
             <th>Round</th>
             <th>Date</th>
@@ -94,7 +93,8 @@ if(isset($_SESSION['user'])=="") {
         <tbody>
 
         <?php
-            $sql = "SELECT bookid,moviename,round,bookdate FROM booking WHERE username = '$_SESSION['user']'";
+	    $username = $_SESSION['user'];
+            $sql = "SELECT bookid,moviename,round,bookdate FROM booking WHERE username = '$username'";
             $res = mysqli_query($conn, $sql);
             if(mysqli_num_rows($res)>0){
                 while($row = mysqli_fetch_array($res)) {
