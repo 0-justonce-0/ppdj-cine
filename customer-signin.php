@@ -106,6 +106,5 @@ if($row['password']==$pwd) {
 </html>
 	';
 }
-<?php
 mysqli_close($conn);
 ?>
